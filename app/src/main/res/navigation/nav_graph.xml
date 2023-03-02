@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/characterListFragment">
+
+    <fragment
+        android:id="@+id/characterListFragment"
+        android:name="com.sebapp.challenge.presentation.foodList.FoodListFragment"
+        android:label="CharacterListFragment" >
+        <action
+            android:id="@+id/action_characterListFragment_to_detailFragment"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.sebapp.challenge.presentation.foodDetail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="food"
+            app:argType="com.sebapp.challenge.data.model.Food" />
+        <action
+            android:id="@+id/action_detailFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.sebapp.challenge.presentation.maps.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <argument
+            android:name="food"
+            app:argType="com.sebapp.challenge.data.model.Food" />
+    </fragment>
+</navigation>

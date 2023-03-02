@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Android App name</string>
+    <string name="title_main">Title Project</string>
+    <string name="welcome">This is a Challenge</string>
+    <string name="character">Hi!</string>
+    <string name="name_title">Name Food</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="character_name">Name of character</string>
+    <string name="charcater_status">Status:</string>
+    <string name="charcater_gender">Gender:</string>
+    <string name="charcater_species">Species:</string>
+    <string name="origen">origen</string>
+    <string name="character_origin">Origin:</string>
+    <string name="edit_button">Edit button</string>
+    <string name="message_error_api">Tenemos inconvenientes para acceder a los datos.</string>
+</resources>
